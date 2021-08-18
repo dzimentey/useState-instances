@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Display} from "./Display";
 import {Button} from "./Button";
-
+import s from './Counter.module.css'
 export const Counter = () => {
 
     const [count, setCount] = useState(0)
@@ -9,11 +9,13 @@ export const Counter = () => {
     const increase = () => setCount(count +1)
 
         return (
-        <div>
+        <div className={s.wrapper}>
 
           <Display count={count} red={count >= 5}/>
-          <Button callBack={reset} title={'reset'}/>
-          <Button callBack={increase} title={'+'} count={count}/>
+            <div className={s.controls}>
+                <Button callBack={reset} title={'reset'}/>
+                <Button callBack={increase} title={'+'} count={count}/>
+            </div>
 
         </div>
     )
