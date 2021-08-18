@@ -1,3 +1,40 @@
 .red {
     color: red;
+    background-color: #a9a9a9;
+}
+
+.wrapper {
+    width: 150px;
+    height: 110px;
+    background-color: #8f8e8e;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    border: 1px solid black;
+
+}
+
+.display {
+    border: 1px solid black;
+    font-size: 50px;
+    font-weight: 500;
+    border-radius: 3px;
+    margin: 3px;
+    text-align: center;
+
+
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3px;
+    padding: 3px 1px;
+}
+
+.button {
+    width: 47%;
+
 }
