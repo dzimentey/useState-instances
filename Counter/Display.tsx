@@ -7,7 +7,7 @@ type DisplayPropsType = {
 }
 export const Display = (props: DisplayPropsType) => {
     return (
-        <div className={props.red ? s.red : ''}>
+        <div className={`${s.display}  ${props.red ? s.red : ''}`}>
             {props.count}
         </div>
     )
