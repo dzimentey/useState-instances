@@ -14,7 +14,7 @@ export const Counter = () => {
           <Display count={count} red={count >= 5}/>
             <div className={s.controls}>
                 <Button callBack={reset} title={'reset'}/>
-                <Button callBack={increase} title={'+'} count={count}/>
+                <Button callBack={increase} title={'incr'} count={count}/>
             </div>
 
         </div>
